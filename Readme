@@ -1,6 +1,14 @@
-# Running Dockern Compose :
-    1. run "sh ./rebuild.sh"
+# Install Dockern Compose :
+    1. run "sh ./install.sh"
+    2. run again "sh ./install.sh" (For setup the prefiledge of mysql)
 
+# jika ingin menginstal ulang docker yang ada mysql
+    1. Hapus folder "mysql-data"
+    2. sudo rm -rf "mysql-data"
+    3. run "sh ./install.sh"
+
+# Saat ada perubahan pada code golang (folder XYZ-Multifinance)
+    1. run "sh ./rebuild.sh"
 
 # Setup MSQL prefiledgefor login as user :
     1. masuk kedalam mysql "docker exec -it mysql mysql -u root -p"
@@ -9,3 +17,5 @@
         GRANT ALL PRIVILEGES ON *.* TO 'xyz'@'172.19.0.1' IDENTIFIED BY 'Password123' WITH GRANT OPTION;   # Sesuaikan dengan IP docker
         FLUSH PRIVILEGES;
     4 login dengan workbench mysql atau dbeaver
+
+# Setup DB menggunakan GORM akan langsung generate Table saat aplikasi dijalankan
