@@ -1,0 +1,94 @@
+{
+	"info": {
+		"_postman_id": "5fd68e95-864f-4e7f-8d64-0613c98228c8",
+		"name": "XYZ-MultiFinance",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21651354"
+	},
+	"item": [
+		{
+			"name": "Create User",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-EXTERNAL-ID",
+						"value": "AaAaAww5w555=91",
+						"type": "text"
+					},
+					{
+						"key": "X-SIGNATURE",
+						"value": "d096b5381b311ac5d4e68c709597766e735bec1c45e4f054eebfc411835ffdf6",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"FullName\": \"Hans Parson\",\n    \"NIK\": \"212015013t35\",\n    \"LegalName\": \"Hans Parson\",\n    \"TempatLahir\": \"Polewali\",\n    \"TanggalLahir\": \"1997-03-02\",\n    \"Gaji\": 12000000,\n    \"FotoKTP\": \"https://assets.pikiran-rakyat.com/crop/0x0:0x0/x/photo/2021/04/20/750175463.jpg\",\n    \"FotoSelfie\": \"https://assets.pikiran-rakyat.com/crop/0x0:0x0/x/photo/2021/04/20/750175463.jpg\",\n    \"LimitOneMonth\": 100000,\n    \"LimitTwoMonth\": 300000,\n    \"LimitThreeMonth\": 500000,\n    \"LimitSixth\": 10000000\n\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://0.0.0.0:61002/create-user",
+					"protocol": "http",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "61002",
+					"path": [
+						"create-user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CreateTransaction",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-EXTERNAL-ID",
+						"value": "Transaction____0000014",
+						"type": "text"
+					},
+					{
+						"key": "X-SIGNATURE",
+						"value": "eed44fe570f234a8e7d29bceac013513e0b53fd0a400fb38a52766b57b20c08c",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"UserID\": \"43189094\",\n    \"OTR\": 100,\n    \"AdminFee\": 100,\n    \"HargaAset\": 1000,\n    \"JumlahBunga\": 5,\n    \"Tenor\": 6,\n    \"NamaAset\": \"Baju Bola Messi\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://0.0.0.0:61002/transaction",
+					"protocol": "http",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "61002",
+					"path": [
+						"transaction"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
