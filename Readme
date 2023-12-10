@@ -21,3 +21,7 @@
 # Setup DB menggunakan GORM akan langsung generate Table saat aplikasi dijalankan
 
 # Curl Testing Postman Dilampirkan dengan nama "XYZ-MultiFinance.postman_collection"
+
+# Log memiliki Api Call ID untuk lebih mempermudah dalam tracking API, dan lengkap dengan data dan informasi yang diperlukan.
+
+# Keamanan API dengan Validasi External ID (mencegah double Request) dan Signature (untuk validasi Authorization)
