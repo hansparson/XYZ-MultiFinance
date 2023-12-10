@@ -1,0 +1,11 @@
+# Running Dockern Compose :
+    1. run "sh ./rebuild.sh"
+
+
+# Setup MSQL prefiledgefor login as user :
+    1. masuk kedalam mysql "docker exec -it mysql mysql -u root -p"
+    2. Masukkan password "Password123"
+    3. setup prefledge pada mysql 
+        GRANT ALL PRIVILEGES ON *.* TO 'xyz'@'172.19.0.1' IDENTIFIED BY 'Password123' WITH GRANT OPTION;   # Sesuaikan dengan IP docker
+        FLUSH PRIVILEGES;
+    4 login dengan workbench mysql atau dbeaver
