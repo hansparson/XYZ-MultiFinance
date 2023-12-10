@@ -19,3 +19,5 @@
     4 login dengan workbench mysql atau dbeaver
 
 # Setup DB menggunakan GORM akan langsung generate Table saat aplikasi dijalankan
+
+# Curl Testing Postman Dilampirkan dengan nama "XYZ-MultiFinance.postman_collection"
